@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.Scanner;
 public class Main {
+    Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("App started!");
 
