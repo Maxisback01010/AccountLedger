@@ -63,18 +63,14 @@ public class Main {
                 for (Transaction transaction : transactions) {
                     System.out.println(transaction);
                 }
-            }
-            else if (choice == 2) {
+            } else if (choice == 2) {
                 // we’ll fill this next 👇
-            }
-            else if (choice == 3) {
+            } else if (choice == 3) {
                 // we’ll fill this next 👇
-            }
-            else if (choice == 4) {
+            } else if (choice == 4) {
                 running = false;
                 System.out.println("Goodbye!");
-            }
-            else {
+            } else {
                 System.out.println("Invalid option.");
             }
         }
