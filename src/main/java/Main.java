@@ -79,7 +79,7 @@ public class Main {
                     }
                 }
 
-            } else if (choice == 4) {
+            } else if (choice == 5) {
                 running = false;
                 System.out.println("Goodbye!");
             } else {
