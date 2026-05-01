@@ -19,7 +19,13 @@ public class Main {
             String line;
 
             while ((line = reader.readLine()) != null) {
-                System.out.println(line); // just print for now
+                String[] parts = line.split("\\|");
+
+                System.out.println(parts[0]); // date
+                System.out.println(parts[1]); // time
+                System.out.println(parts[2]); // description
+                System.out.println(parts[3]); // vendor
+                System.out.println(parts[4]); // amount
             }
 
             reader.close();
