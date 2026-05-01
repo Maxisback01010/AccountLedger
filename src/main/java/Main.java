@@ -29,11 +29,11 @@ public class Main {
                 );
 
                 System.out.println(transactionFromFile);
-               // System.out.println(parts[0]); // date
-               // System.out.println(parts[1]); // time
-               // System.out.println(parts[2]); // description
-               // System.out.println(parts[3]); // vendor
-               // System.out.println(parts[4]); // amount
+                // System.out.println(parts[0]); // date
+                // System.out.println(parts[1]); // time
+                // System.out.println(parts[2]); // description
+                // System.out.println(parts[3]); // vendor
+                // System.out.println(parts[4]); // amount
             }
 
             reader.close();
