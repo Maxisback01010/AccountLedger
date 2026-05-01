@@ -3,8 +3,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Scanner;
 public class Main {
-    Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("App started!");
 
         Transaction t = new Transaction(
@@ -47,6 +47,36 @@ public class Main {
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        boolean running = true;
+
+        while (running) {
+            System.out.println("\n=== Menu ===");
+            System.out.println("1. View All Transactions");
+            System.out.println("2. View Deposits");
+            System.out.println("3. View Payments");
+            System.out.println("4. Exit");
+
+            System.out.print("Choose an option: ");
+            int choice = scanner.nextInt();
+            if (choice == 1) {
+                for (Transaction transaction : transactions) {
+                    System.out.println(transaction);
+                }
+            }
+            else if (choice == 2) {
+                // we’ll fill this next 👇
+            }
+            else if (choice == 3) {
+                // we’ll fill this next 👇
+            }
+            else if (choice == 4) {
+                running = false;
+                System.out.println("Goodbye!");
+            }
+            else {
+                System.out.println("Invalid option.");
+            }
         }
     }
 
