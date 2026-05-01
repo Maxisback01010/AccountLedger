@@ -55,7 +55,8 @@ public class Main {
             System.out.println("1. View All Transactions");
             System.out.println("2. View Deposits");
             System.out.println("3. View Payments");
-            System.out.println("4. Exit");
+            System.out.println("4. Filter by Date"); // New
+            System.out.println("5. Exit");    //Moved down
 
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
