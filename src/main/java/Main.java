@@ -10,9 +10,9 @@ public class Main {
                 "Software",
                 "Gamestop",
                 -82.75
-
         );
         System.out.println(t);
+
         try {
             BufferedReader reader = new BufferedReader(new FileReader("transactions.csv"));
 
@@ -20,12 +20,20 @@ public class Main {
 
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\\|");
+                Transaction transactionFromFile = new Transaction(
+                        parts[0],
+                        parts[1],
+                        parts[2],
+                        parts[3],
+                        Double.parseDouble(parts[4])
+                );
 
-                System.out.println(parts[0]); // date
-                System.out.println(parts[1]); // time
-                System.out.println(parts[2]); // description
-                System.out.println(parts[3]); // vendor
-                System.out.println(parts[4]); // amount
+                System.out.println(transactionFromFile);
+               // System.out.println(parts[0]); // date
+               // System.out.println(parts[1]); // time
+               // System.out.println(parts[2]); // description
+               // System.out.println(parts[3]); // vendor
+               // System.out.println(parts[4]); // amount
             }
 
             reader.close();
