@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("App started!");
+        System.out.println("Welcome, to your bank!");
 
         Transaction t = new Transaction(
                 "2026-04-30",
