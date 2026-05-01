@@ -11,7 +11,11 @@ public class Transaction{
         this.description = description;
         this.vendor = vendor;
         this.amount = amount;
+        }
+    public double getAmount() {
+        return amount;
     }
+
 
         public String toString() {
             return date + "|" + time + "|"+ description + "|" + vendor + "|" + amount;
