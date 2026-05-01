@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.FileReader;
 public class Main {
@@ -12,7 +13,7 @@ public class Main {
                 -82.75
         );
         System.out.println(t);
-
+        ArrayList<Transaction> transactions = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader("transactions.csv"));
 
@@ -27,8 +28,12 @@ public class Main {
                         parts[3],
                         Double.parseDouble(parts[4])
                 );
+                transactions.add(transactionFromFile);
+                for (Transaction tFromList : transactions) {
+                    System.out.println(tFromList);
+                }
 
-                System.out.println(transactionFromFile);
+                //System.out.println(transactionFromFile);
                 // System.out.println(parts[0]); // date
                 // System.out.println(parts[1]); // time
                 // System.out.println(parts[2]); // description
